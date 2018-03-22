@@ -7,18 +7,18 @@
         <li>{{trabajadores[1].edad}}</li>
         <li>{{trabajadores[1].cargo}}</li>
         <li *ngIf="trabajadores[1].contratado == true">Esta contratado</li>
-        <li *ngIf="trabajadores[1].contratado == flase">No esta contratado</li>
+        <li *ngIf="trabajadores[1].contratado == false">No esta contratado</li>
     </ul>
 </div>
 
 <div *ngIf="trabajador_externo == false">
     <button (click)="cambiarExterno(true)">Mostrar trabajador</button>
     <ul >
-         <li>{{home.nombre}}</li>
-         <li>{{home.edad}}</li>
-          <li>{{home.cargo}}</li>
-          <li *ngIf="home.contratado == true">Esta contratado</li>
-        <li *ngIf="home.contratado == false">No esta contratado</li>
+         <li>{{empleado.nombre}}</li>
+         <li>{{empleado.edad}}</li>
+          <li>{{empleado.cargo}}</li>
+          <li *ngIf="empleado.contratado == true">Esta contratado</li>
+        <li *ngIf="empleado.contratado == false">No esta contratado</li>
      </ul>
     </div>
 
@@ -26,14 +26,14 @@
     <hr/>
     <h3>Listado de empleados  FOOOOOOOR</h3>
     <ul >
-     <li *ngFor="let home of trabajadores; let i = index">
+     <li *ngFor="let empleado of trabajadores; let i = index">
         <b> Empleado {{i+1}}:</b>
          <ul >
-            <li>{{home.nombre}}</li>
-            <li>{{home.edad}}</li>
-             <li>{{home.cargo}}</li>
-             <li *ngIf="home.contratado == true">Esta contratado</li>
-           <li *ngIf="home.contratado == false">No esta contratado</li>
+            <li>{{empleado.nombre}}</li>
+            <li>{{empleado.edad}}</li>
+             <li>{{empleado.cargo}}</li>
+             <li *ngIf="empleado.contratado == true">Esta contratado</li>
+           <li *ngIf="empleado.contratado == false">No esta contratado</li>
         </ul>
      </li>
     </ul>
