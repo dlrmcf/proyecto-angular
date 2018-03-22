@@ -1,16 +1,19 @@
 import { ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-//IMPORTAR COMPONENTES
 import { HomeComponent } from './home/home.component';
 import { FrutaComponent } from './fruta/fruta.component';
-import { Home } from './home/home';
+import { PrincipalComponent } from './principal/principal.component';
+import { ContactoComponent } from './contacto/contacto.component';
 
 const appRoutes: Routes = [
-    {path: '', component: HomeComponent},
+    {path: '', component: PrincipalComponent},
     {path: 'home', component: HomeComponent},
     {path: 'fruta', component: FrutaComponent},
-    {path: '**', component: HomeComponent}
+    {path: 'pagina-principal', component: PrincipalComponent},
+    {path: 'contacto', component: ContactoComponent},
+    {path: '**', component: PrincipalComponent}
+
 ];
 
 export const appRoutingProviders: any[] = [];

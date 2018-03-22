@@ -3,4 +3,14 @@
 </h1>
 <!--<fruta></fruta>-->
 <hr>
-<home></home>
+<nav>
+    <a [routerLink]="['/pagina-principal']">Principal</a>--
+    <a [routerLink]="['/fruta']">Frutas</a>-
+    <a [routerLink]="['/home']">Home</a>-
+    <a [routerLink]="['/contacto']">Contacto</a>-
+
+</nav>
+
+<hr>
+<!--<home></home>-->
+<router-outlet></router-outlet>
