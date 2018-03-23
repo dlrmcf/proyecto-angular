@@ -3,7 +3,7 @@ import { RopaService } from '../services/ropa.service';
 
 @Component ({
     selector: 'principal',
-    templateUrl: './principal.component.html'
+    templateUrl: './principal.component.html',
     providers: [RopaService]
 })
 export class PrincipalComponent {
@@ -16,21 +16,21 @@ export class PrincipalComponent {
 
     constructor(
         private _ropaService: RopaService
-    ){
+    ) {
         this.fecha = new Date(2017, 2, 23);
     }
 
-    ngOnInit(){
+    ngOnInit() {
         this.listado_ropa = this._ropaService.getRopa();
-        console.log(this.listado_ropa):
+        console.log(this.listado_ropa);
     }
 
-    guardarPrenda(){
+    guardarPrenda() {
         this._ropaService.addRopa(this.prenda_a_guardar);
         this.prenda_a_guardar = null;
     }
 
-    eliminarPrenda(index:number){
+    eliminarPrenda(index: number) {
         this._ropaService.deleteRopa(index);
     }
 }
