@@ -1,1 +1,7 @@
 h1{color:red;}
+
+.activado {
+    font-weight: bold;
+    font-size: 30px;
+    background: lightblue;
+}

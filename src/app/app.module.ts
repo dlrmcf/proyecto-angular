@@ -10,6 +10,8 @@ import { OperativasComponent } from './operativas/operativas.component';
 import { FrutaComponent } from './fruta/fruta.component';
 import { PrincipalComponent } from './principal/principal.component';
 import { ContactoComponent } from './contacto/contacto.component';
+import { ConversorPipe } from './pipes/conversor.pipe';
+
 
 @NgModule({
   declarations: [
@@ -18,7 +20,8 @@ import { ContactoComponent } from './contacto/contacto.component';
     OperativasComponent,
     FrutaComponent,
     PrincipalComponent,
-    ContactoComponent
+    ContactoComponent,
+    ConversorPipe
   ],
   imports: [
     BrowserModule,
